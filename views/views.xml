@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="odoo_mautic.list">
+      <field name="name">odoo_mautic list</field>
+      <field name="model">odoo_mautic.odoo_mautic</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="odoo_mautic.action_window">
+      <field name="name">odoo_mautic window</field>
+      <field name="res_model">odoo_mautic.odoo_mautic</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="odoo_mautic.action_server">
+      <field name="name">odoo_mautic server</field>
+      <field name="model_id" ref="model_odoo_mautic_odoo_mautic"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="odoo_mautic" id="odoo_mautic.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="odoo_mautic.menu_1" parent="odoo_mautic.menu_root"/>
+    <menuitem name="Menu 2" id="odoo_mautic.menu_2" parent="odoo_mautic.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="odoo_mautic.menu_1_list" parent="odoo_mautic.menu_1"
+              action="odoo_mautic.action_window"/>
+    <menuitem name="Server to list" id="odoo_mautic" parent="odoo_mautic.menu_2"
+              action="odoo_mautic.action_server"/>
+    -->
+  </data>
+</odoo>
